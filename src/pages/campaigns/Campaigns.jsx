@@ -241,7 +241,7 @@ const Campaigns = () => {
                 ))}
                 </List>
             <div className="footBtnWrap">
-                <Button className="payNowBtn" variant="contained">Add item ₹400</Button>
+                <Button className="payNowBtn" component={Link} to="/cart" variant="contained">Add item ₹400</Button>
             </div>
           </Drawer>
         </React.Fragment>

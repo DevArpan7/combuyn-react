@@ -19,7 +19,10 @@ const OTPbox = () => {
                 secure={false}
                 className="otp_fields"
             />
-            <Button component={Link} to="/chooseapartment" className="formSubmitBtn" variant="contained">Submit</Button>
+            <Button component={Link} 
+            // to="/chooseapartment" 
+            to="/home"
+            className="formSubmitBtn" variant="contained">Submit</Button>
             <div className="otp_bottom">                
                 <p>Didn't receive the OTP?</p>
                 <ResendOTP className="otp_resend_box" renderTime={false} handelResendClick={() => console.log("Resend clicked")} />

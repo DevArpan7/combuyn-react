@@ -53,7 +53,7 @@ const PaymentMethod = () => {
                 </RadioGroup>
             </div>
             <div className="footBtnWrap">
-                <Button className="payNowBtn" variant="contained">CONTINUE</Button>
+                <Button component={Link} to="/order" className="payNowBtn" variant="contained">CONTINUE</Button>
             </div>
         </div>
 

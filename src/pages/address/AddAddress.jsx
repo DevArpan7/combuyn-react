@@ -139,7 +139,7 @@ const AddAddress = () => {
                         <FormControlLabel className='radioText' value="work" control={<Radio className='radioInput' />} label={<><i className="far fa-briefcase"></i> Work</>} />
                     </RadioGroup>
                     <div className="footBtnWrap">
-                        <Button className="payNowBtn" variant="contained">Save address and proceed</Button>
+                        <Button className="payNowBtn" variant="contained" component={Link} to="/deliveryaddress">Save address and proceed</Button>
                     </div>
                 </form>
             </div>            
