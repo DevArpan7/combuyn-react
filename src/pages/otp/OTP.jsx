@@ -6,6 +6,7 @@ import loginImg from "../../assets/img/login-img.png";
 
 
 const OTP = () => {
+
   return (
     <>
         <div className="login_screen">

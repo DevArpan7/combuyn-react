@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PageRoutes from '../../routes'
 
 const OrderTopBar = () => {
   return (
     <>
         <div className="mainTopBar">
             <div className="mainTopBar_left">
-                <Link className='topBackBtn' to="/order">
+                <Link className='topBackBtn' to={PageRoutes.HOME}>
                     <i className="fas fa-arrow-left"></i>
                 </Link>
                 Order List

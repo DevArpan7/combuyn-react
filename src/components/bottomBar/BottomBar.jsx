@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import PageRoutes from '../../routes';
 
 const BottomBar = () => {
   return (
@@ -7,7 +8,7 @@ const BottomBar = () => {
         <div className="bottomMenu">
             <ul>
                 <li>
-                    <NavLink activeclassname="active" to="/home">
+                    <NavLink activeclassname="active" to={PageRoutes.HOME}>
                         <i className="far fa-home"></i>
                         <div className="menuItem">
                             Home
@@ -15,7 +16,7 @@ const BottomBar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeclassname="active" to="/order">
+                    <NavLink activeclassname="active" to={PageRoutes.ORDER_LIST}>
                         <i className="far fa-shopping-bag"></i>
                         <div className="menuItem">
                             My Order
@@ -23,7 +24,7 @@ const BottomBar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/wishlist">
+                    <NavLink to={PageRoutes.FAVORITES}>
                         <i className="far fa-heart"></i>
                         <div className="menuItem">
                             My Favorites
@@ -31,7 +32,7 @@ const BottomBar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/profile">
+                    <NavLink to={PageRoutes.PROFILE}>
                         <i className="far fa-user-circle"></i>
                         <div className="menuItem">
                             Profile
